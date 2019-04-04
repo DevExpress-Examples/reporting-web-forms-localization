@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* **[Default.aspx](./CS/UpdateLocalizationExample/Default.aspx) (VB: [Default.aspx.vb](./VB/UpdateLocalizationExample/Default.aspx.vb))**
+* **[Default.aspx](./CS/UpdateLocalizationExample/Default.aspx) (VB: [Default.aspx](./VB/UpdateLocalizationExample/Default.aspx))**
 * [Default.aspx.cs](./CS/UpdateLocalizationExample/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/UpdateLocalizationExample/Default.aspx.vb))
 <!-- default file list end -->
 # ASPxReportDesigner - How to tune localization of a web report designer control
