@@ -42,10 +42,10 @@ Namespace SubstituteLocalizationStringsExample.Services
 			' Returns report layout data stored in a Report Storage using the specified URL. 
 			' This method is called only for valid URLs after the IsValidUrl method is called.
 			Try
-                If Directory.EnumerateFiles(reportDirectory).Select(AddressOf Path.GetFileNameWithoutExtension).Contains(url) Then
-                    Return File.ReadAllBytes(Path.Combine(reportDirectory, url & FileExtension))
-                End If
-                If ReportsFactory.Reports.ContainsKey(url) Then
+				If Directory.EnumerateFiles(reportDirectory).Select(AddressOf Path.GetFileNameWithoutExtension).Contains(url) Then
+					Return File.ReadAllBytes(Path.Combine(reportDirectory, url & FileExtension))
+				End If
+				If ReportsFactory.Reports.ContainsKey(url) Then
 					Using ms As New MemoryStream()
 						ReportsFactory.Reports(url)().SaveLayoutToXml(ms)
 						Return ms.ToArray()
@@ -58,12 +58,12 @@ Namespace SubstituteLocalizationStringsExample.Services
 		End Function
 
 		Public Overrides Function GetUrls() As Dictionary(Of String, String)
-            ' Returns a dictionary of the existing report URLs and display names. 
-            ' This method is called when running the Report Designer, 
-            ' before the Open Report and Save Report dialogs are shown and after a new report is saved to a storage.
+			' Returns a dictionary of the existing report URLs and display names. 
+			' This method is called when running the Report Designer, 
+			' before the Open Report and Save Report dialogs are shown and after a new report is saved to a storage.
 
-            Return Directory.GetFiles(reportDirectory, "*" & FileExtension).Select(AddressOf Path.GetFileNameWithoutExtension).Concat(ReportsFactory.Reports.Select(Function(x) x.Key)).ToDictionary(Function(x) x)
-        End Function
+			Return Directory.GetFiles(reportDirectory, "*" & FileExtension).Select(AddressOf Path.GetFileNameWithoutExtension).Concat(ReportsFactory.Reports.Select(Function(x) x.Key)).ToDictionary(Function(x) x)
+		End Function
 
 		Public Overrides Sub SetData(ByVal report As XtraReport, ByVal url As String)
 			' Stores the specified report to a Report Storage using the specified URL. 

@@ -5,14 +5,10 @@ Imports System.Linq
 Imports System.Threading.Tasks
 
 Namespace SubstituteLocalizationStringsExample.PredefinedReports
-	Public NotInheritable Class ReportsFactory
-
-		Private Sub New()
-		End Sub
-
-		Shared Sub New()
+	Public Module ReportsFactory
+		Sub New()
 			Reports.Add("TestReport", Function() New TestReport())
 		End Sub
-		Public Shared Reports As New Dictionary(Of String, Func(Of XtraReport))()
-	End Class
+		Public Reports As New Dictionary(Of String, Func(Of XtraReport))()
+	End Module
 End Namespace

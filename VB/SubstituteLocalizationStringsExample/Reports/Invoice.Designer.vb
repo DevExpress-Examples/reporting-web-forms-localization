@@ -216,15 +216,15 @@
 			Me.AmountPaid = New DevExpress.XtraReports.UI.CalculatedField()
 			Me.calculatedField1 = New DevExpress.XtraReports.UI.CalculatedField()
 			Me.paramCompany = New DevExpress.XtraReports.Parameters.Parameter()
-			DirectCast(Me.table3, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.table7, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.table8, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.table9, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.table2, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.table1, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table3, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.xrTable1, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.xrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table7, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table8, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table9, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table2, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.table1, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' Detail
 			' 
@@ -406,7 +406,7 @@
 			Me.tableCell21.StylePriority.UseFont = False
 			Me.tableCell21.StylePriority.UsePadding = False
 			Me.tableCell21.StylePriority.UseTextAlignment = False
-			Me.tableCell21.Text = "Phone:" & ControlChars.Tab
+			Me.tableCell21.Text = "Phone:" & vbTab
 			Me.tableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft
 			Me.tableCell21.Weight = 0.62618693439772333R
 			' 
@@ -1299,7 +1299,7 @@
 			Me.tableCell7.Multiline = True
 			Me.tableCell7.Name = "tableCell7"
 			Me.tableCell7.StyleName = "SimpleTextStylSe"
-			Me.tableCell7.Text = "www.northwind.com" & ControlChars.CrLf
+			Me.tableCell7.Text = "www.northwind.com" & vbCrLf
 			Me.tableCell7.Weight = 1.0198401485769693R
 			' 
 			' tableRow1
@@ -1447,15 +1447,15 @@
 			Me.StyleSheet.AddRange(New DevExpress.XtraReports.UI.XRControlStyle() { Me.Foreground, Me.ForegroundDisabled, Me.SimpleTextStylSe, Me.TableHeaderStyle})
 			Me.StyleSheetPath = ""
 			Me.Version = "20.1"
-			DirectCast(Me.table3, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.table7, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.table8, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.table9, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.table2, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.table1, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table3, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.xrTable1, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.xrTable2, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table7, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table8, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table9, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table2, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.table1, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 
