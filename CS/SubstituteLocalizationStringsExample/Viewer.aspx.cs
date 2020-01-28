@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SubstituteLocalizationStringsExample {    public partial class Viewer : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            ASPxWebDocumentViewer1.OpenReport("Invoice.19.2");
+            ASPxWebDocumentViewer1.OpenReport("Invoice");
         }
     }
 }

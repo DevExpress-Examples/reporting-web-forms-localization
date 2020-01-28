@@ -10,7 +10,7 @@ Namespace SubstituteLocalizationStringsExample
 		Inherits System.Web.UI.Page
 
 		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-			ASPxWebDocumentViewer1.OpenReport("Invoice.19.2")
+			ASPxWebDocumentViewer1.OpenReport("Invoice")
 		End Sub
 	End Class
 End Namespace

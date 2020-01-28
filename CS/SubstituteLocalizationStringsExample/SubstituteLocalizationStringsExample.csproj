@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -104,7 +104,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="App_Data\nwind.json" />
-    <Content Include="Reports\Invoice.19.2.repx" />
+    <Content Include="Reports\Invoice.repx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -134,12 +134,6 @@
     <Compile Include="PredefinedReports\TestReport.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Invoice.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Invoice.Designer.cs">
-      <DependentUpon>Invoice.cs</DependentUpon>
-    </Compile>
     <Compile Include="Services\ReportStorageWebExtension.cs" />
     <Compile Include="Site.master.cs">
       <DependentUpon>Site.master</DependentUpon>
@@ -155,11 +149,6 @@
     <Compile Include="Viewer.aspx.designer.cs">
       <DependentUpon>Viewer.aspx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Reports\Invoice.resx">
-      <DependentUpon>Invoice.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

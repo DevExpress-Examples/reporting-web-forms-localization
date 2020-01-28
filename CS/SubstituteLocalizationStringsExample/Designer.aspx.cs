@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 namespace SubstituteLocalizationStringsExample {
     public partial class Designer : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            ASPxReportDesigner1.OpenReport("Invoice.19.2");
+            ASPxReportDesigner1.OpenReport("Invoice");
         }
     }
 }
