@@ -7,7 +7,6 @@ using System.Reflection;
 using System.ServiceModel;
 using DevExpress.XtraReports.Web.Extensions;
 using DevExpress.XtraReports.UI;
-using SubstituteLocalizationStringsExample.PredefinedReports;
 
 namespace SubstituteLocalizationStringsExample.Services
 {
@@ -46,13 +45,6 @@ namespace SubstituteLocalizationStringsExample.Services
                 {
                     return File.ReadAllBytes(Path.Combine(reportDirectory, url + FileExtension));
                 }
-                if (ReportsFactory.Reports.ContainsKey(url))
-                {
-                    using (MemoryStream ms = new MemoryStream()) {
-                        ReportsFactory.Reports[url]().SaveLayoutToXml(ms);
-                        return ms.ToArray();
-                    }
-                }
                 throw new FaultException(new FaultReason(string.Format("Could not find report '{0}'.", url)), new FaultCode("Server"), "GetData");
             } catch (Exception) {
                 throw new FaultException(new FaultReason(string.Format("Could not find report '{0}'.", url)), new FaultCode("Server"), "GetData");
@@ -66,7 +58,6 @@ namespace SubstituteLocalizationStringsExample.Services
             
             return Directory.GetFiles(reportDirectory, "*" + FileExtension)
                                      .Select(Path.GetFileNameWithoutExtension)
-                                     .Concat(ReportsFactory.Reports.Select(x => x.Key))
                                      .ToDictionary<string, string>(x => x);
         }
 

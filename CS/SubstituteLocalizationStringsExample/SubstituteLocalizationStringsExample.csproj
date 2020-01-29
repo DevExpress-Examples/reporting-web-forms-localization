@@ -62,10 +62,6 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="DevExpress.Data.v19.2" />
     <Reference Include="DevExpress.Web.ASPxThemes.v19.2" />
     <Reference Include="DevExpress.RichEdit.v19.2.Core" />
@@ -103,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
-    <Content Include="App_Data\nwind.json" />
     <Content Include="Reports\Invoice.repx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -129,10 +124,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="PredefinedReports\ReportsFactory.cs" />
-    <Compile Include="PredefinedReports\TestReport.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Services\ReportStorageWebExtension.cs" />
     <Compile Include="Site.master.cs">
