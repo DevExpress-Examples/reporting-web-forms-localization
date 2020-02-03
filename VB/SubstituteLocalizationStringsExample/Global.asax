@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="SubstituteLocalizationStringsExample.Global_asax" Language="vb" %>
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="SubstituteLocalizationStringsExample.Global_asax" Language="C#" %>
