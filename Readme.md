@@ -2,7 +2,7 @@
 
 This example shows how to apply German localization to report controls in an ASP.NET Web Forms application and change UI texts.
 
-The project specifies the culture of the application using the **Culture** and **UICulture** parameters in the [GlobalizationSection](https://docs.microsoft.com/en-us/dotnet/api/system.web.configuration.globalizationsection). Localized texts are automatically obtained from the satellite resource assemblies in the `de' folder. 
+The project specifies the culture of the application using the **Culture** and **UICulture** parameters in the [GlobalizationSection](https://docs.microsoft.com/en-us/dotnet/api/system.web.configuration.globalizationsection). Localized texts are automatically obtained from the satellite resource assemblies in the `de` folder. For information in how to obtain satellite assemblies, review the following help topic: [Satellite Resource Assemblies](https://docs.devexpress.com/AspNet/12050/common-concepts/localization/satellite-resource-assemblies).
 
 The application handles the `CustomizeLocalization` event of the client-side report control to adjust the translation. The script on the page calls the **UpdateLocalization** method to specify the text for the localization strings.
 
