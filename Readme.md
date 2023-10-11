@@ -1,26 +1,26 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128597907/19.2.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T200029)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+# Reporting for Web Forms - Report Designer and Document Viewer Localization
 
-* [Default.aspx](./CS/SubstituteLocalizationStringsExample/Default.aspx) (VB: [Default.aspx](./VB/SubstituteLocalizationStringsExample/Default.aspx))
-* [Default.aspx.cs](./CS/SubstituteLocalizationStringsExample/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/SubstituteLocalizationStringsExample/Default.aspx.vb))
-* [Web.config](./CS/SubstituteLocalizationStringsExample/Web.config) (VB: [Web.config](./VB/SubstituteLocalizationStringsExample/Web.config) )
-<!-- default file list end -->
-# How to Localize the Web Report Designer and Document Viewer Controls
+This example shows how to apply German localization to report controls in an ASP.NET Web Forms application and change UI texts.
 
-This example illustrates how to apply German localization to reporting controls in a ASP.NET Web Forms application and change the selected UI texts.
+The project specifies the culture of the application using the **Culture** and **UICulture** parameters in the [GlobalizationSection](https://docs.microsoft.com/en-us/dotnet/api/system.web.configuration.globalizationsection). Localized texts are automatically obtained from the satellite resource assemblies in the `de' folder. 
 
-The project specifies the application culture with the **Culture** and **UICulture** settings in the [GlobalizationSection](https://docs.microsoft.com/en-us/dotnet/api/system.web.configuration.globalizationsection). The localized texts are obtained automatically from the satellite resource assemblies. Resource assemblies for the German language are included in the DevExpress installation package and added to the project when it is built.
+The application handles the `CustomizeLocalization` event of the client-side report control to adjust the translation. The script on the page calls the **UpdateLocalization** method to specify the text for the localization strings.
 
-To adjust the default translation, the application handles the reporting control's **CustomizeLocalization** client-side event. The script calls the **UpdateLocalization** method to specify a text for a particular localization string.
- 
-**See also:**
+![Reporting for Web Forms - Report Designer and Document Viewer Localization](Images/screenshot.png)
+
+## Files to Review
+
+* [Designer.aspx](CS/SubstituteLocalizationStringsExample/Designer.aspx) (VB: [Designer.aspx](VB/SubstituteLocalizationStringsExample/Designer.aspx))
+* [Viewer.aspx.cs](CS/SubstituteLocalizationStringsExample/Viewer.aspx.cs) (VB: [Viewer.aspx.vb](VB/SubstituteLocalizationStringsExample/Viewer.aspx.vb))
+* [Web.config](CS/SubstituteLocalizationStringsExample/Web.config) (VB: [Web.config](VB/SubstituteLocalizationStringsExample/Web.config) )
+
+
+## Documentation
 
 * [Web Document Viewer - Localization](https://docs.devexpress.com/XtraReports/116315/create-end-user-reporting-applications/web-reporting/asp-net-webforms-reporting/document-viewer/localization)
 * [Web End-User Report Designer - Localization](https://docs.devexpress.com/XtraReports/400229/create-end-user-reporting-applications/web-reporting/asp-net-webforms-reporting/end-user-report-designer/localization)
 
+## More Examples
 
+- [How to Localize the Reporting Controls in an Angular JavaScript Application](https://github.com/DevExpress-Examples/how-to-localize-angular-reporting-controls)
+- [How to Localize the Reporting Controls in a JavaScript Application with Knockout Bindings](https://github.com/DevExpress-Examples/how-to-localize-javascript-reporting-controls)
