@@ -31,7 +31,7 @@ The application handles the `CustomizeLocalization` event of the client-side rep
 - [How to Localize the Reporting Controls in an Angular JavaScript Application](https://github.com/DevExpress-Examples/how-to-localize-angular-reporting-controls)
 - [How to Localize the Reporting Controls in a JavaScript Application with Knockout Bindings](https://github.com/DevExpress-Examples/how-to-localize-javascript-reporting-controls)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-localization&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-web-forms-localization&~~~was_helpful=no)
 
